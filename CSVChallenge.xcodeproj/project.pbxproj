@@ -12,10 +12,12 @@
 		FDBCA7FA208B3DB200F73CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBCA7F8208B3DB200F73CF7 /* Main.storyboard */; };
 		FDBCA7FC208B3DB600F73CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBCA7FB208B3DB600F73CF7 /* Assets.xcassets */; };
 		FDBCA7FF208B3DB600F73CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBCA7FD208B3DB600F73CF7 /* LaunchScreen.storyboard */; };
-		FDBCA80A208B3DB600F73CF7 /* CSVChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCA809208B3DB600F73CF7 /* CSVChallengeTests.swift */; };
 		FDBCA815208B3DB700F73CF7 /* CSVChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCA814208B3DB700F73CF7 /* CSVChallengeUITests.swift */; };
 		FDD8F681208B3FE200AEC851 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD8F680208B3FE200AEC851 /* CSV.framework */; };
 		FDD8F682208B413600AEC851 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD8F680208B3FE200AEC851 /* CSV.framework */; };
+		FDD8F684208B452B00AEC851 /* CSVLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8F683208B452B00AEC851 /* CSVLoaderTests.swift */; };
+		FDD8F686208B459D00AEC851 /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8F685208B459D00AEC851 /* CSVLoader.swift */; };
+		FDD8F687208B45EC00AEC851 /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8F685208B459D00AEC851 /* CSVLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +39,13 @@
 		FDBCA7FE208B3DB600F73CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDBCA800208B3DB600F73CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDBCA805208B3DB600F73CF7 /* CSVChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDBCA809208B3DB600F73CF7 /* CSVChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVChallengeTests.swift; sourceTree = "<group>"; };
 		FDBCA80B208B3DB600F73CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDBCA810208B3DB700F73CF7 /* CSVChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBCA814208B3DB700F73CF7 /* CSVChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVChallengeUITests.swift; sourceTree = "<group>"; };
 		FDBCA816208B3DB700F73CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD8F680208B3FE200AEC851 /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
+		FDD8F683208B452B00AEC851 /* CSVLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVLoaderTests.swift; sourceTree = "<group>"; };
+		FDD8F685208B459D00AEC851 /* CSVLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 				FDBCA7FB208B3DB600F73CF7 /* Assets.xcassets */,
 				FDBCA7FD208B3DB600F73CF7 /* LaunchScreen.storyboard */,
 				FDBCA800208B3DB600F73CF7 /* Info.plist */,
+				FDD8F685208B459D00AEC851 /* CSVLoader.swift */,
 			);
 			path = CSVChallenge;
 			sourceTree = "<group>";
@@ -109,7 +113,7 @@
 		FDBCA808208B3DB600F73CF7 /* CSVChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				FDBCA809208B3DB600F73CF7 /* CSVChallengeTests.swift */,
+				FDD8F683208B452B00AEC851 /* CSVLoaderTests.swift */,
 				FDBCA80B208B3DB600F73CF7 /* Info.plist */,
 			);
 			path = CSVChallengeTests;
@@ -283,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBCA7F7208B3DB200F73CF7 /* ViewController.swift in Sources */,
+				FDD8F686208B459D00AEC851 /* CSVLoader.swift in Sources */,
 				FDBCA7F5208B3DB200F73CF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDBCA80A208B3DB600F73CF7 /* CSVChallengeTests.swift in Sources */,
+				FDD8F684208B452B00AEC851 /* CSVLoaderTests.swift in Sources */,
+				FDD8F687208B45EC00AEC851 /* CSVLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
