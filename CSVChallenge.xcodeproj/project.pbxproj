@@ -18,6 +18,9 @@
 		FDD8F684208B452B00AEC851 /* CSVLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8F683208B452B00AEC851 /* CSVLoaderTests.swift */; };
 		FDD8F686208B459D00AEC851 /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8F685208B459D00AEC851 /* CSVLoader.swift */; };
 		FDD8F687208B45EC00AEC851 /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8F685208B459D00AEC851 /* CSVLoader.swift */; };
+		FDD8F68A208B481C00AEC851 /* original.csv in Resources */ = {isa = PBXBuildFile; fileRef = FDD8F689208B481C00AEC851 /* original.csv */; };
+		FDD8F68C208B867D00AEC851 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8F68B208B867D00AEC851 /* Row.swift */; };
+		FDD8F68D208B867D00AEC851 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8F68B208B867D00AEC851 /* Row.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,8 @@
 		FDD8F680208B3FE200AEC851 /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
 		FDD8F683208B452B00AEC851 /* CSVLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVLoaderTests.swift; sourceTree = "<group>"; };
 		FDD8F685208B459D00AEC851 /* CSVLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVLoader.swift; sourceTree = "<group>"; };
+		FDD8F689208B481C00AEC851 /* original.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = original.csv; sourceTree = "<group>"; };
+		FDD8F68B208B867D00AEC851 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Row.swift; path = CSVChallenge/Row.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,7 @@
 		FDBCA7E8208B3DB200F73CF7 = {
 			isa = PBXGroup;
 			children = (
+				FDD8F68B208B867D00AEC851 /* Row.swift */,
 				FDBCA7F3208B3DB200F73CF7 /* CSVChallenge */,
 				FDBCA808208B3DB600F73CF7 /* CSVChallengeTests */,
 				FDBCA813208B3DB700F73CF7 /* CSVChallengeUITests */,
@@ -113,6 +119,7 @@
 		FDBCA808208B3DB600F73CF7 /* CSVChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				FDD8F688208B481C00AEC851 /* Mockdata */,
 				FDD8F683208B452B00AEC851 /* CSVLoaderTests.swift */,
 				FDBCA80B208B3DB600F73CF7 /* Info.plist */,
 			);
@@ -134,6 +141,14 @@
 				FDD8F680208B3FE200AEC851 /* CSV.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDD8F688208B481C00AEC851 /* Mockdata */ = {
+			isa = PBXGroup;
+			children = (
+				FDD8F689208B481C00AEC851 /* original.csv */,
+			);
+			path = Mockdata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD8F68A208B481C00AEC851 /* original.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD8F68C208B867D00AEC851 /* Row.swift in Sources */,
 				FDBCA7F7208B3DB200F73CF7 /* ViewController.swift in Sources */,
 				FDD8F686208B459D00AEC851 /* CSVLoader.swift in Sources */,
 				FDBCA7F5208B3DB200F73CF7 /* AppDelegate.swift in Sources */,
@@ -297,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD8F684208B452B00AEC851 /* CSVLoaderTests.swift in Sources */,
+				FDD8F68D208B867D00AEC851 /* Row.swift in Sources */,
 				FDD8F687208B45EC00AEC851 /* CSVLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
