@@ -14,16 +14,11 @@
 		FDBCA7FF208B3DB600F73CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBCA7FD208B3DB600F73CF7 /* LaunchScreen.storyboard */; };
 		FDBCA80A208B3DB600F73CF7 /* CSVChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCA809208B3DB600F73CF7 /* CSVChallengeTests.swift */; };
 		FDBCA815208B3DB700F73CF7 /* CSVChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCA814208B3DB700F73CF7 /* CSVChallengeUITests.swift */; };
+		FDD8F681208B3FE200AEC851 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD8F680208B3FE200AEC851 /* CSV.framework */; };
+		FDD8F682208B413600AEC851 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD8F680208B3FE200AEC851 /* CSV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FDBCA806208B3DB600F73CF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FDBCA7E9208B3DB200F73CF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FDBCA7F0208B3DB200F73CF7;
-			remoteInfo = CSVChallenge;
-		};
 		FDBCA811208B3DB700F73CF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FDBCA7E9208B3DB200F73CF7 /* Project object */;
@@ -47,6 +42,7 @@
 		FDBCA810208B3DB700F73CF7 /* CSVChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBCA814208B3DB700F73CF7 /* CSVChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVChallengeUITests.swift; sourceTree = "<group>"; };
 		FDBCA816208B3DB700F73CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD8F680208B3FE200AEC851 /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD8F681208B3FE200AEC851 /* CSV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD8F682208B413600AEC851 /* CSV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +79,7 @@
 				FDBCA808208B3DB600F73CF7 /* CSVChallengeTests */,
 				FDBCA813208B3DB700F73CF7 /* CSVChallengeUITests */,
 				FDBCA7F2208B3DB200F73CF7 /* Products */,
+				FDD8F67F208B3FE100AEC851 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +124,14 @@
 			path = CSVChallengeUITests;
 			sourceTree = "<group>";
 		};
+		FDD8F67F208B3FE100AEC851 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDD8F680208B3FE200AEC851 /* CSV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +142,7 @@
 				FDBCA7ED208B3DB200F73CF7 /* Sources */,
 				FDBCA7EE208B3DB200F73CF7 /* Frameworks */,
 				FDBCA7EF208B3DB200F73CF7 /* Resources */,
+				FDD8F67E208B3EA200AEC851 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -156,7 +164,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FDBCA807208B3DB600F73CF7 /* PBXTargetDependency */,
 			);
 			name = CSVChallengeTests;
 			productName = CSVChallengeTests;
@@ -251,6 +258,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FDD8F67E208B3EA200AEC851 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CSV.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CSV.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDBCA7ED208B3DB200F73CF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -280,11 +306,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FDBCA807208B3DB600F73CF7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FDBCA7F0208B3DB200F73CF7 /* CSVChallenge */;
-			targetProxy = FDBCA806208B3DB600F73CF7 /* PBXContainerItemProxy */;
-		};
 		FDBCA812208B3DB700F73CF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FDBCA7F0208B3DB200F73CF7 /* CSVChallenge */;
@@ -432,6 +453,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U22VHNMDG4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CSVChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +475,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U22VHNMDG4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CSVChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,6 +498,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U22VHNMDG4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CSVChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -490,6 +523,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U22VHNMDG4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CSVChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
